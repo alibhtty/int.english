@@ -39,6 +39,7 @@
 <style>
     body {
       min-height: max(884px, 100dvh);
+      overscroll-behavior: hidden;
     }
   </style>
   </head>
@@ -98,7 +99,7 @@
 <div class="flex items-center gap-4 mt-6 border-t border-gray-100 dark:border-white/10 pt-5">
 <div class="size-12 rounded-full bg-cover bg-center shrink-0 ring-2 ring-white dark:ring-[#20363b] shadow-md" data-alt="Portrait of Carlos looking professional" style="background-image: url('./img/ali.jpg');"></div> <!-- https://lh3.googleusercontent.com/aida-public/AB6AXuCDPOnUXxo_5FBXEunfsafx1zMLq8H-3li1P0SLezglqmtWlFMndSuOGj8MwTp0UVzFlLpr_x3LmcLwJ5q1v0_M678A8qEvWll_9FD4qHwsXgBSJsqW1f9f4g1tUYbd7H_cNFLf5_ZTKJEx8TVgCKic2GxHwRYwzMFhwoL1zJgqVu9Os3p_a1xzzu1NNXuIx57ggPRmq0zdcYsR9tAZELYX7yR3LHU0MA_Dca6ZZsP4PhGzM6qVORGITWZuhIcX7M4qadRDIZ9WWRA -->
 <div>
-<p class="text-base font-bold text-gray-900 dark:text-white">Pedrito el chocolatero</p> <!-- Carlos Ruiz -->
+<p class="text-base font-bold text-gray-900 dark:text-white">Rodrigo</p> <!-- Carlos Ruiz -->
 <div class="flex items-center gap-1.5 mt-0.5">
 <span class="material-symbols-outlined text-primary dark:text-teal-400 text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
 <p class="text-xs font-semibold text-primary dark:text-teal-400 tracking-wide">B2 FIRST</p>
@@ -143,7 +144,7 @@
 <!-- Team Member 1 -->
 <div class="flex flex-col items-center p-5 bg-background-light dark:bg-[#1a2e33] rounded-2xl text-center border border-transparent dark:border-white/5">
 <div class="size-[88px] rounded-full bg-cover bg-center mb-4 border-4 border-white dark:border-[#1a2e33] shadow-sm" data-alt="Portrait of David, Lead Teacher" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6Xa4lXwch_pEsrq3HokYhGm74RsZE_yKQvV-koUwxVYmqNrFeS0PIl4w7Y14BE9g1eCYg-lub8q7SONxQ4WZDfgSUYT42WPnDrz5l1r97h8gDme11HIgkOC6kpk1dJr-sEG4osUR02y9MyqSeJrZtNprFX4lUakP_1Hd1ujn-xX1iA55EOjlIzmsGi7jyjrZbBS9kiGEBzMjpzOeNlTy3cSL_4XDq_CwHmkaug9rC6AaXR7BhujaLhpZzoHz3dH3JWvWi2AmQkEk');"></div>
-<h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">David Miller</h3>
+<h3 class="font-bold text-lg text-gray-900 dark:text-white leading-tight">Aftab A.</h3> <!-- David Miller -->
 <p class="text-[11px] text-primary dark:text-teal-400 font-bold uppercase tracking-wider mt-1.5">Head Teacher</p>
 <p class="text-[11px] text-gray-500 dark:text-gray-400 mt-0.5">Ex-Cambridge Examiner</p>
 </div>
@@ -221,14 +222,14 @@
 </div>
 </section>
 <!-- Extra Spacer for fixed CTA -->
-<div class="h-32"></div>
+<div class="h-12"></div> <!-- h-32 -->
 <!-- Sticky CTA with Gradient Border Effect -->
-<div class="fixed bottom-0 left-0 w-full p-5 bg-white/80 dark:bg-[#1a2e33]/90 backdrop-blur-xl border-t border-gray-100 dark:border-gray-800 z-40">
+<div class="fixed bottom-0 left-0 w-full p-5 pt-2 bg-white/80 dark:bg-[#1a2e33]/90 backdrop-blur-xl border-t border-gray-100 dark:border-gray-800 z-40">
 <button class="relative w-full rounded-xl group overflow-hidden shadow-xl shadow-primary/25">
 <div class="absolute inset-0 bg-primary hover:bg-[#005a61] transition-colors duration-300"></div>
 <!-- Subtle texture overlay -->
 <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 16px 16px;"></div>
-<div class="relative flex items-center justify-between py-4 px-6">
+<a href="https://wa.me/34602316998?text=Hola,%20quiero%20más%20información" target="_blank" class="relative flex items-center justify-between py-4 px-6">
 <div class="flex flex-col items-start text-left">
 <span class="font-bold text-lg text-white tracking-tight">Agenda tu examen</span>
 <span class="text-xs text-white/90 font-medium tracking-wide flex items-center gap-1">
@@ -239,7 +240,7 @@
 <div class="bg-white/20 rounded-full p-2.5 group-hover:bg-white/30 transition-all transform group-hover:translate-x-1">
 <span class="material-symbols-outlined text-white text-xl font-bold">arrow_forward</span>
 </div>
-</div>
+</a>
 </button>
 </div>
 </body></html>
