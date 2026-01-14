@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Certificación de Inglés</title>
+
+<!-- PWA -->
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#006c75",
+        primaryDark: "#004d53",
+        bgLight: "#f7f9f9",
+        surface: "#ffffff",
+        textDark: "#101818",
+        gold: "#C9A961"
+      },
+      fontFamily: {
+        display: ["Manrope", "sans-serif"]
+      },
+      borderRadius: {
+        xl: "1rem",
+        "2xl": "1.5rem",
+        "3xl": "2rem"
+      }
+    }
+  }
+}
+</script>
+
+<style>
+/* === LOCK UX === */
+html, body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  user-select: none;
+}
+
+body {
+  min-height: 100dvh;
+}
+</style>
+</head>
+
+<body class="font-display bg-bgLight text-textDark antialiased">
+
+<!-- ===== TOP BAR ===== -->
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-200 px-4 py-3 flex justify-between items-center">
+  <div class="flex items-center gap-2">
+    <div class="size-9 rounded-xl bg-primary flex items-center justify-center shadow">
+      <span class="material-symbols-outlined text-white">school</span>
+    </div>
+    <span class="font-extrabold tracking-tight text-primary">Int. English</span>
+  </div>
+  <a href="https://wa.me/34602316998" target="_blank"
+     class="px-3 py-1.5 rounded-full bg-gray-100 hover:bg-gray-200 transition flex items-center gap-1 text-primary font-bold text-sm">
+    WhatsApp
+    <span class="material-symbols-outlined text-[18px]">chat</span>
+  </a>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main class="px-4 pt-6 pb-28 flex flex-col gap-14 max-w-[540px] mx-auto">
+
+<!-- ===== HERO CON VIDEO ===== -->
+<section class="rounded-3xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+
+  <!-- VIDEO -->
+  <div class="relative h-[75vh] max-h-[620px]"> <!-- 620 -->
+    <video autoplay muted loop playsinline
+           class="absolute inset-0 w-full h-full object-cover"
+           poster="assets/img/fallback.jpg">
+      <source src="assets/video/video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 h-full flex flex-col justify-end items-center text-center px-6 pb-10 gap-6 text-white">
+
+      <div class="px-3 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-xs font-bold uppercase flex items-center gap-1">
+        <span class="material-symbols-outlined text-gold text-[16px]">verified</span>
+        Certificación Oficial
+      </div>
+
+      <h1 class="text-3xl font-extrabold leading-tight">
+        Obtén tu certificado de inglés en  
+        <span class="text-teal-300">7 días</span>
+      </h1>
+
+      <p class="text-sm text-white/90 max-w-xs">
+        Examen oficial, rápido y sin riesgos.  
+        <strong>Pagas solo si apruebas.</strong>
+      </p>
+
+      <button class="w-full max-w-xs py-4 rounded-2xl bg-primary hover:bg-primaryDark active:scale-95 transition font-bold flex items-center justify-center gap-2 shadow-xl shadow-primary/40">
+        Agendar mi examen
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== BENEFICIOS ===== -->
+<section class="flex flex-col gap-5">
+  <h2 class="text-2xl font-extrabold tracking-tight">
+    ¿Por qué elegirnos?
+  </h2>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div class="rounded-2xl p-4 bg-white border border-gray-200 shadow-sm flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">public</span>
+      <h3 class="font-bold text-sm">Validez internacional</h3>
+      <p class="text-xs text-gray-500">Aceptado globalmente</p>
+    </div>
+
+    <div class="rounded-2xl p-4 bg-white border border-gray-200 shadow-sm flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">bolt</span>
+      <h3 class="font-bold text-sm">Resultados rápidos</h3>
+      <p class="text-xs text-gray-500">En solo 7 días</p>
+    </div>
+
+    <div class="rounded-2xl p-4 bg-white border border-gray-200 shadow-sm flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">bar_chart</span>
+      <h3 class="font-bold text-sm">Todos los niveles</h3>
+      <p class="text-xs text-gray-500">Desde A1 hasta C2</p>
+    </div>
+
+    <div class="rounded-2xl p-4 bg-white border border-gray-200 shadow-sm flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">location_on</span>
+      <h3 class="font-bold text-sm">Examen presencial</h3>
+      <p class="text-xs text-gray-500">Lima y Barcelona</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== BOTTOM NAV ===== -->
+<nav class="fixed bottom-0 inset-x-0 h-[78px] bg-white/90 backdrop-blur-xl border-t border-gray-200 flex justify-around items-center pb-safe z-50">
+  <a class="flex flex-col items-center text-primary">
+    <span class="material-symbols-outlined text-[26px]">home</span>
+    <span class="text-[10px] font-bold">Inicio</span>
+  </a>
+  <a href="index-2.html" class="flex flex-col items-center text-gray-400">
+    <span class="material-symbols-outlined text-[26px]">assignment</span>
+    <span class="text-[10px]">Proceso</span>
+  </a>
+  <a href="index-3.html" class="flex flex-col items-center text-gray-400">
+    <span class="material-symbols-outlined text-[26px]">widgets</span>
+    <span class="text-[10px]">Servicios</span>
+  </a>
+</nav>
+
+<style>
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+</style>
+
+</body>
+</html>

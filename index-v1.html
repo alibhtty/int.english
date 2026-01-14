@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Certificación de Inglés</title>
+
+<!-- PWA / Standalone basics -->
+<meta name="theme-color" content="#006c75">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#006c75",
+        primaryDark: "#004d53",
+        bgDark: "#0e1f24",
+        surfaceDark: "#1b343b",
+        gold: "#C9A961"
+      },
+      fontFamily: {
+        display: ["Manrope", "sans-serif"]
+      },
+      borderRadius: {
+        xl: "1rem",
+        "2xl": "1.25rem",
+        "3xl": "1.75rem"
+      }
+    }
+  }
+}
+</script>
+
+<style>
+/* === HARD MOBILE LOCKDOWN === */
+html, body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  min-height: 100dvh;
+}
+
+/* Disable selection everywhere */
+* {
+  user-select: none;
+}
+
+/* Video background */
+.video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.video-bg video,
+.video-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(0,108,117,0.25),
+    rgba(0,0,0,0.85)
+  );
+  z-index: -1;
+}
+</style>
+</head>
+
+<body class="font-display text-white bg-bgDark antialiased">
+
+<!-- ===== VIDEO BACKGROUND ===== -->
+<div class="video-bg">
+  <video autoplay muted loop playsinline poster="fallback.jpg">
+    <source src="assets/video/video.mp4" type="video/mp4">
+  </video>
+  <img src="assets/img/fallback.jpg" alt="" loading="eager">
+</div>
+<div class="video-overlay"></div>
+
+<!-- ===== TOP BAR ===== -->
+<nav class="sticky top-0 z-50 backdrop-blur-xl bg-black/30 border-b border-white/10 px-4 py-3 flex justify-between items-center">
+  <div class="flex items-center gap-2">
+    <div class="size-9 rounded-xl bg-primary flex items-center justify-center shadow-lg">
+      <span class="material-symbols-outlined text-white">school</span>
+    </div>
+    <span class="font-extrabold tracking-tight">Int. English</span>
+  </div>
+  <a href="https://wa.me/34602316998" target="_blank"
+     class="px-3 py-1.5 rounded-full bg-white/10 hover:bg-white/20 transition flex items-center gap-1">
+    <span class="text-sm font-bold">WhatsApp</span>
+    <span class="material-symbols-outlined text-[18px]">chat</span>
+  </a>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main class="relative z-10 px-4 pt-6 pb-28 flex flex-col gap-10">
+
+<!-- ===== HERO ===== -->
+<section class="rounded-3xl p-6 bg-white/10 backdrop-blur-xl border border-white/15 shadow-2xl flex flex-col items-center text-center gap-6">
+
+  <div class="px-3 py-1 rounded-full bg-white/20 text-xs font-bold tracking-wide uppercase flex items-center gap-1">
+    <span class="material-symbols-outlined text-gold text-[16px]">verified</span>
+    Certificación Oficial
+  </div>
+
+  <h1 class="text-3xl font-extrabold leading-tight">
+    Certifícate en Inglés en  
+    <span class="text-teal-300">7 Días</span>
+  </h1>
+
+  <p class="text-sm text-white/80 max-w-xs">
+    Examen oficial, rápido y sin riesgos.  
+    <strong>Pagas solo si apruebas.</strong>
+  </p>
+
+  <button class="w-full max-w-xs py-4 rounded-2xl bg-primary hover:bg-primaryDark active:scale-95 transition font-bold flex items-center justify-center gap-2 shadow-xl shadow-primary/40">
+    Agendar Examen
+    <span class="material-symbols-outlined">arrow_forward</span>
+  </button>
+
+  <div class="flex items-center gap-3 text-xs text-white/80">
+    <span>+1.200 certificados este mes</span>
+  </div>
+</section>
+
+<!-- ===== BENEFITS ===== -->
+<section class="flex flex-col gap-4">
+  <h2 class="text-xl font-bold">¿Por qué elegirnos?</h2>
+
+  <div class="grid grid-cols-2 gap-3">
+    <div class="rounded-2xl p-4 bg-white/10 backdrop-blur border border-white/10 flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">public</span>
+      <h3 class="font-bold text-sm">Validez Global</h3>
+      <p class="text-xs text-white/70">Aceptado internacionalmente</p>
+    </div>
+
+    <div class="rounded-2xl p-4 bg-white/10 backdrop-blur border border-white/10 flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">bolt</span>
+      <h3 class="font-bold text-sm">Rápido</h3>
+      <p class="text-xs text-white/70">Resultados en 7 días</p>
+    </div>
+
+    <div class="rounded-2xl p-4 bg-white/10 backdrop-blur border border-white/10 flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">bar_chart</span>
+      <h3 class="font-bold text-sm">A1–C2</h3>
+      <p class="text-xs text-white/70">Todos los niveles</p>
+    </div>
+
+    <div class="rounded-2xl p-4 bg-white/10 backdrop-blur border border-white/10 flex flex-col gap-2">
+      <span class="material-symbols-outlined text-primary">location_on</span>
+      <h3 class="font-bold text-sm">Presencial</h3>
+      <p class="text-xs text-white/70">Lima & Barcelona</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== BOTTOM NAV ===== -->
+<nav class="fixed bottom-0 inset-x-0 h-[78px] backdrop-blur-xl bg-black/40 border-t border-white/10 flex justify-around items-center pb-safe z-50">
+  <a class="flex flex-col items-center text-primary">
+    <span class="material-symbols-outlined text-[26px]">home</span>
+    <span class="text-[10px] font-bold">Inicio</span>
+  </a>
+  <a class="flex flex-col items-center text-white/60">
+    <span class="material-symbols-outlined text-[26px]">assignment</span>
+    <span class="text-[10px]">Proceso</span>
+  </a>
+  <a class="flex flex-col items-center text-white/60">
+    <span class="material-symbols-outlined text-[26px]">widgets</span>
+    <span class="text-[10px]">Servicios</span>
+  </a>
+</nav>
+
+<style>
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+</style>
+
+</body>
+</html>
