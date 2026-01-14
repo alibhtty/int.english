@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Información y Proceso</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#006c75",
+                        "primary-dark": "#005a61",
+                        "accent-gold": "#C9A961",
+                        "background-light": "#fbfaf9",
+                        "background-dark": "#1a2e33",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#253a40",
+                        "text-main": "#1a2e33",
+                        "text-muted": "#5e898d",
+                        "text-light": "#e0e6e7",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom timeline line */
+        .timeline-line {
+            background-image: linear-gradient(to bottom, #dae6e7 50%, transparent 50%);
+            background-size: 2px 12px;
+            background-repeat: repeat-y;
+        }
+        .dark .timeline-line {
+            background-image: linear-gradient(to bottom, #2d4a52 50%, transparent 50%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-text-light font-display antialiased min-h-screen flex flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
+<div class="flex items-center px-4 py-4 justify-between max-w-md mx-auto w-full">
+<button class="text-text-main dark:text-text-light hover:bg-black/5 dark:hover:bg-white/10 rounded-full p-2 -ml-2 transition-colors" onclick="history.back()">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-text-main dark:text-text-light text-lg font-bold leading-tight tracking-tight flex-1 text-center pr-10">Información y Proceso</h1>
+</div>
+</header>
+<main class="flex-1 w-full max-w-md mx-auto pb-24">
+<!-- Section 1: Practical Info -->
+<section class="pt-6 px-4">
+<div class="flex items-center gap-2 mb-4">
+<h2 class="text-2xl font-bold tracking-tight text-text-main dark:text-white">Información Práctica</h2>
+<div class="h-[2px] bg-accent-gold w-8 mt-1 rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Duration -->
+<div class="group bg-surface-light dark:bg-surface-dark p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary/30 transition-all duration-300">
+<div class="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-primary dark:text-primary-light group-hover:text-white text-[24px]">schedule</span>
+</div>
+<p class="text-xs font-semibold uppercase tracking-wider text-text-muted dark:text-gray-400 mb-1">Duración</p>
+<p class="text-lg font-bold text-text-main dark:text-white">2.5 Horas</p>
+</div>
+<!-- Modality -->
+<div class="group bg-surface-light dark:bg-surface-dark p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary/30 transition-all duration-300">
+<div class="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-primary dark:text-primary-light group-hover:text-white text-[24px]">school</span>
+</div>
+<p class="text-xs font-semibold uppercase tracking-wider text-text-muted dark:text-gray-400 mb-1">Modalidad</p>
+<p class="text-lg font-bold text-text-main dark:text-white">Presencial</p>
+</div>
+<!-- Locations -->
+<div class="group bg-surface-light dark:bg-surface-dark p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary/30 transition-all duration-300">
+<div class="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-primary dark:text-primary-light group-hover:text-white text-[24px]">location_on</span>
+</div>
+<p class="text-xs font-semibold uppercase tracking-wider text-text-muted dark:text-gray-400 mb-1">Sedes</p>
+<p class="text-lg font-bold text-text-main dark:text-white leading-tight">Lima &amp;<br/>Barcelona</p>
+</div>
+<!-- Price -->
+<div class="group bg-surface-light dark:bg-surface-dark p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 hover:border-primary/30 transition-all duration-300 relative overflow-hidden">
+<div class="absolute -right-4 -top-4 w-16 h-16 bg-accent-gold/10 rounded-full blur-xl"></div>
+<div class="w-10 h-10 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-3 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-primary dark:text-primary-light group-hover:text-white text-[24px]">payments</span>
+</div>
+<p class="text-xs font-semibold uppercase tracking-wider text-text-muted dark:text-gray-400 mb-1">Precio</p>
+<p class="text-lg font-bold text-text-main dark:text-white">300 S/ <span class="text-sm font-normal text-text-muted">o 300€</span></p>
+</div>
+</div>
+<div class="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg flex items-start gap-3 border border-blue-100 dark:border-blue-800">
+<span class="material-symbols-outlined text-primary text-xl mt-0.5">verified_user</span>
+<p class="text-sm text-primary dark:text-blue-100 leading-snug">Examen 100% verificado en centros autorizados para garantizar validez internacional.</p>
+</div>
+</section>
+<div class="h-8"></div>
+<!-- Section 2: How it works -->
+<section class="px-4">
+<div class="flex items-center gap-2 mb-6">
+<h2 class="text-2xl font-bold tracking-tight text-text-main dark:text-white">Cómo funciona</h2>
+<div class="h-[2px] bg-accent-gold w-8 mt-1 rounded-full"></div>
+</div>
+<div class="relative pl-2">
+<!-- Step 1 -->
+<div class="grid grid-cols-[40px_1fr] gap-x-3 group mb-2">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shadow-md z-10 group-hover:scale-110 transition-transform">1</div>
+<div class="w-[2px] bg-[#dae6e7] dark:bg-gray-700 h-full grow my-1 timeline-line"></div>
+</div>
+<div class="pb-8 pt-1">
+<h3 class="text-lg font-bold text-text-main dark:text-white mb-1">Rellena el formulario</h3>
+<p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed">Completa tus datos básicos en menos de 2 minutos para iniciar el proceso.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="grid grid-cols-[40px_1fr] gap-x-3 group mb-2">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shadow-md z-10 group-hover:scale-110 transition-transform">2</div>
+<div class="w-[2px] bg-[#dae6e7] dark:bg-gray-700 h-full grow my-1 timeline-line"></div>
+</div>
+<div class="pb-8 pt-1">
+<h3 class="text-lg font-bold text-text-main dark:text-white mb-1">Selección de fecha</h3>
+<p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed">Elige la sede más cercana (Lima o Barcelona) y el horario que mejor te convenga.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="grid grid-cols-[40px_1fr] gap-x-3 group mb-2">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shadow-md z-10 group-hover:scale-110 transition-transform">3</div>
+<div class="w-[2px] bg-[#dae6e7] dark:bg-gray-700 h-full grow my-1 timeline-line"></div>
+</div>
+<div class="pb-8 pt-1">
+<h3 class="text-lg font-bold text-text-main dark:text-white mb-1">Examen presencial</h3>
+<p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed">Acude al centro verificado. Solo necesitas tu identificación oficial.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="grid grid-cols-[40px_1fr] gap-x-3 group mb-2">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold shadow-md z-10 group-hover:scale-110 transition-transform">4</div>
+<div class="w-[2px] bg-[#dae6e7] dark:bg-gray-700 h-full grow my-1 timeline-line"></div>
+</div>
+<div class="pb-8 pt-1">
+<h3 class="text-lg font-bold text-text-main dark:text-white mb-1">Certificado en 7 días</h3>
+<p class="text-text-muted dark:text-gray-400 text-sm leading-relaxed">Recibe tus resultados digitales oficiales directamente en tu correo.</p>
+</div>
+</div>
+<!-- Step 5 (Special) -->
+<div class="grid grid-cols-[40px_1fr] gap-x-3 group">
+<div class="flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-accent-gold text-white flex items-center justify-center text-sm font-bold shadow-md z-10 ring-4 ring-accent-gold/20 animate-pulse">
+<span class="material-symbols-outlined text-sm font-bold">check</span>
+</div>
+</div>
+<div class="pt-1">
+<div class="bg-gradient-to-br from-[#FFFBF2] to-[#FFF6E0] dark:from-[#2e2a1e] dark:to-[#262217] p-4 rounded-xl border border-accent-gold/30 shadow-sm relative overflow-hidden">
+<!-- Decorative accent -->
+<div class="absolute top-0 right-0 p-2 opacity-10">
+<span class="material-symbols-outlined text-6xl text-accent-gold">verified</span>
+</div>
+<h3 class="text-lg font-bold text-text-main dark:text-white mb-1 flex items-center gap-2">
+                                Pago tras resultado
+                                <span class="bg-accent-gold text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded-full tracking-wide">Único</span>
+</h3>
+<p class="text-text-main/80 dark:text-white/80 text-sm leading-relaxed mb-3">
+                                Nuestro compromiso es tu éxito. Solo realizas el pago si apruebas el examen y obtienes tu certificación.
+                            </p>
+<div class="flex items-center gap-2 text-accent-gold text-xs font-bold uppercase tracking-wide">
+<span class="material-symbols-outlined text-sm">security</span>
+                                Garantía de satisfacción
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Sticky CTA -->
+<div class="fixed bottom-0 left-0 w-full bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 p-4 pb-6 z-40 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<div class="max-w-md mx-auto">
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span>Agendar Examen</span>
+<span class="material-symbols-outlined text-xl">calendar_month</span>
+</button>
+</div>
+</div>
+</body></html>

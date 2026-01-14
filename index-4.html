@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FAQ y Cierre - Certificación Oficial</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#006c75",
+                        "primary-dark": "#005a62",
+                        "accent-gold": "#C9A961",
+                        "background-light": "#fbfaf9",
+                        "background-dark": "#1a2e33",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#23393f",
+                        "text-main": "#101818",
+                        "text-muted": "#5e898d",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                    boxShadow: {
+                        "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom Accordion Transition */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+        
+        .faq-icon-wrapper {
+            transition: transform 0.3s ease;
+        }
+        details[open] .faq-icon-wrapper {
+            transform: rotate(180deg);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-text-main dark:text-white transition-colors duration-300">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm p-4 pb-2 border-b border-gray-100 dark:border-gray-800">
+<button class="text-text-main dark:text-white flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer" onclick="history.back()">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Certificación Oficial</h2>
+</header>
+<main class="flex-grow flex flex-col">
+<!-- FAQ Intro -->
+<section class="px-6 pt-8 pb-4">
+<div class="flex flex-col items-center text-center gap-2">
+<div class="bg-primary/10 text-primary dark:text-primary-dark rounded-full p-2 mb-2">
+<span class="material-symbols-outlined text-3xl">help_center</span>
+</div>
+<h2 class="text-text-main dark:text-white text-3xl font-extrabold leading-tight tracking-tight">
+                        Preguntas Frecuentes
+                    </h2>
+<p class="text-text-muted dark:text-gray-400 text-sm max-w-xs mx-auto">
+                        Resolvemos tus dudas sobre el proceso único de certificación.
+                    </p>
+</div>
+</section>
+<!-- FAQ Accordions -->
+<section class="px-4 pb-12 w-full max-w-2xl mx-auto">
+<div class="flex flex-col gap-4">
+<!-- Item 1 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-soft border border-transparent dark:border-gray-700 overflow-hidden transition-all duration-200 hover:shadow-md">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<p class="text-text-main dark:text-white text-base font-bold leading-normal">¿Dónde son los exámenes?</p>
+</div>
+<div class="faq-icon-wrapper text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-text-muted dark:text-gray-300 text-sm font-normal leading-relaxed pl-9">
+                                Contamos con sedes certificadas en las principales ciudades del país. Al iniciar tu registro, podrás seleccionar la ubicación más cercana a tu domicilio o trabajo.
+                            </p>
+</div>
+</details>
+<!-- Item 2 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-soft border border-transparent dark:border-gray-700 overflow-hidden transition-all duration-200 hover:shadow-md">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">payments</span>
+<p class="text-text-main dark:text-white text-base font-bold leading-normal">¿Cuál es el precio?</p>
+</div>
+<div class="faq-icon-wrapper text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-text-muted dark:text-gray-300 text-sm font-normal leading-relaxed pl-9">
+                                El costo del examen es de $150 USD. Recuerda nuestro modelo único: <span class="text-primary font-bold">solo pagas si apruebas</span>. La reserva tiene un costo simbólico de $10 USD que se descuenta del total.
+                            </p>
+</div>
+</details>
+<!-- Item 3 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-soft border border-transparent dark:border-gray-700 overflow-hidden transition-all duration-200 hover:shadow-md">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-accent-gold">verified</span> <!-- Gold accent for unique selling point -->
+<p class="text-text-main dark:text-white text-base font-bold leading-normal">¿Cómo funciona el pago contra resultado?</p>
+</div>
+<div class="faq-icon-wrapper text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-text-muted dark:text-gray-300 text-sm font-normal leading-relaxed pl-9 border-l-2 border-accent-gold ml-1 pl-4 my-2">
+                                Es sencillo: realizas el examen sin costo completo. Si obtienes el puntaje necesario para la certificación, procesamos el pago y emitimos tu documento. Si no apruebas, no pagas nada más que la reserva.
+                            </p>
+</div>
+</details>
+<!-- Item 4 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-soft border border-transparent dark:border-gray-700 overflow-hidden transition-all duration-200 hover:shadow-md">
+<summary class="flex cursor-pointer items-center justify-between gap-4 p-5">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">workspace_premium</span>
+<p class="text-text-main dark:text-white text-base font-bold leading-normal">¿Qué validez tiene el certificado?</p>
+</div>
+<div class="faq-icon-wrapper text-primary">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</summary>
+<div class="px-5 pb-5 pt-0">
+<p class="text-text-muted dark:text-gray-300 text-sm font-normal leading-relaxed pl-9">
+                                Nuestro certificado tiene validez oficial internacional por 2 años, reconocido por instituciones académicas y empresas multinacionales como prueba de competencia lingüística.
+                            </p>
+</div>
+</details>
+</div>
+</section>
+<!-- Final CTA Section (Distinctive High Contrast) -->
+<section class="relative mt-auto">
+<!-- Decorative wave or slant top -->
+<div class="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
+<svg class="relative block w-[calc(100%+1.3px)] h-[50px]" data-name="Layer 1" preserveaspectratio="none" viewbox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg">
+<path class="fill-primary dark:fill-[#005a62]" d="M1200 120L0 16.48 0 0 1200 0 1200 120z"></path>
+</svg>
+</div>
+<div class="bg-primary dark:bg-[#005a62] px-6 py-16 text-center rounded-t-[2.5rem] mt-6 shadow-[0_-10px_40px_-10px_rgba(0,108,117,0.3)]">
+<!-- Official Seal Badge -->
+<div class="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-white/10 border border-white/20 backdrop-blur-md shadow-lg">
+<span class="material-symbols-outlined text-white text-4xl">school</span>
+</div>
+<h2 class="text-white text-3xl font-black leading-tight tracking-tight mb-4 max-w-md mx-auto">
+                        ¿Listo para certificar tu inglés?
+                    </h2>
+<p class="text-white/90 text-lg font-medium leading-relaxed max-w-md mx-auto mb-10">
+                        Únete a los más de 10,000 profesionales certificados. Agenda tu cita hoy y <span class="text-accent-gold font-bold">paga solo si apruebas</span>.
+                    </p>
+<button class="w-full max-w-sm bg-surface-light text-primary hover:bg-gray-50 active:scale-95 transition-all duration-200 h-14 rounded-xl flex items-center justify-center gap-2 shadow-lg mx-auto font-bold text-lg">
+<span>Agendar mi Examen</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<p class="text-white/60 text-xs mt-4">Plazas limitadas por sede cada mes.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-[#005a62] pt-4 pb-12 px-6 border-t border-white/10">
+<div class="max-w-md mx-auto flex flex-col items-center gap-6">
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-3">
+<a class="text-white/70 hover:text-white text-sm transition-colors hover:underline" href="#">Política de Privacidad</a>
+<a class="text-white/70 hover:text-white text-sm transition-colors hover:underline" href="#">Términos y Condiciones</a>
+</div>
+<div class="flex items-center gap-2 opacity-50">
+<span class="material-symbols-outlined text-white text-sm">verified_user</span>
+<p class="text-white text-xs font-normal">© 2023 Certificación Inglés Oficial</p>
+</div>
+</div>
+<!-- Bottom safe area spacing for iOS home indicator -->
+<div class="h-6 w-full"></div>
+</footer>
+</div>
+<script>
+        // Simple script to handle accordion logic so only one is open at a time (optional but nice UX)
+        const details = document.querySelectorAll("details");
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", () => {
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>
